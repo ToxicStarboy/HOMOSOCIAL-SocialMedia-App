@@ -1,26 +1,15 @@
-// const express = require("express");
-import express from "express";
+const express = require("express");
 const app = express();
-// const mongoose = require("mongoose");
-import mongoose from "mongoose";
-// const dotenv = require("dotenv");
-import dotenv from "dotenv";
-// const helmet = require("helmet");
-import helmet from "helmet";
-// const morgan = require("morgan");
-import morgan from "morgan";
-// const userRoute = require("./routes/users");
-import userRoute from "./routes/users.js";
-// const postRoute = require("./routes/posts");
-import postRoute from "./routes/posts.js";
-// const authRoute = require("./routes/auth");
-import authRoute from "./routes/auth.js";
-// const cors = require("cors");
-import cors from "cors";
-// const multer = require("multer");
-import multer from "multer";
-// const path = require("path");
-import path from "path";
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const helmet = require("helmet");
+const morgan = require("morgan");
+const userRoute = require("./routes/users");
+const postRoute = require("./routes/posts");
+const authRoute = require("./routes/auth");
+const cors = require("cors");
+const multer = require("multer");
+const path = require("path");
 
 dotenv.config();
 

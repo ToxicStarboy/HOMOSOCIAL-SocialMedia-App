@@ -1,12 +1,7 @@
-// const router = require("express").Router();
-import express from "express";
-const router = express.Router();
+const router = require("express").Router();
 // const { Users } = require("../../client/src/dummyData");
-import {Users} from "../../client/src/dummyData";
-// const Post = require("../models/Post");
-import Post from "../models/Post";
-// const User = require("../models/User");
-import User from "../models/User";
+const Post = require("../models/Post");
+const User = require("../models/User");
 
 //create a post
 
@@ -105,4 +100,4 @@ router.get("/profile/:username", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;
