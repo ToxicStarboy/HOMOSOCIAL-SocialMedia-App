@@ -13,13 +13,13 @@ const path = require("path");
 
 dotenv.config();
 
-const fileURLToPath = require("url");
+const {fileURLToPath} = require('url');
 // import { fileURLToPath } from "url";
-const dirname = require("path");
+const path = require('path')
 // import { dirname } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 8800;
 
