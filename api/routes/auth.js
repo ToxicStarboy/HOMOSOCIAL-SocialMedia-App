@@ -1,6 +1,10 @@
-const router = require("express").Router();
-const User = require("../models/User");
-const bcrypt = require("bcrypt");
+// const router = require("express").Router();
+import express from "express";
+const router = express.Router();
+// const User = require("../models/User");
+import User from "../models/User";
+// const bcrypt = require("bcrypt");
+import bcrypt from "bcrypt";
 
 //REGISTER
 router.post("/register", async (req, res) => {

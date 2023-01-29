@@ -1,7 +1,12 @@
-const router = require("express").Router();
+// const router = require("express").Router();
+import express from "express";
+const router = express.Router();
 // const { Users } = require("../../client/src/dummyData");
-const Post = require("../models/Post");
-const User = require("../models/User");
+import {Users} from "../../client/src/dummyData";
+// const Post = require("../models/Post");
+import Post from "../models/Post";
+// const User = require("../models/User");
+import User from "../models/User";
 
 //create a post
 
