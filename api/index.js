@@ -13,13 +13,19 @@ const multer = require("multer");
 
 dotenv.config();
 
-const {fileURLToPath} = require('url');
-// import { fileURLToPath } from "url";
-const path = require('path')
-// import { dirname } from "path";
-
+import path from 'path';
+import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+
+// const {fileURLToPath} = require('url');
+// // import { fileURLToPath } from "url";
+// const path = require('path')
+// // import { dirname } from "path";
+
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 8800;
 
