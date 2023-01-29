@@ -1,5 +1,3 @@
-import { fileURLToPath } from "url";
-import { dirname } from "path";
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -15,11 +13,13 @@ const path = require("path");
 
 dotenv.config();
 
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
 const _dirname = dirname(_filename);
 
-
+const PORT = process.env.PORT || 8800;
 
 mongoose.connect(process.env.MONGO_URL,()=>{
     console.log("Connected to MongoDB")
@@ -64,6 +64,6 @@ if (process.env.NODE_ENV === "production") {
     );
   }
 
-app.listen(8800,()=>{
+app.listen(PORT,()=>{
     console.log("Backend server is running!");
 })
