@@ -9,16 +9,14 @@ const postRoute = require("./routes/posts");
 const authRoute = require("./routes/auth");
 const cors = require("cors");
 const multer = require("multer");
-// const path = require("path");
+const path = require("path");
 
 dotenv.config();
 
-import path from 'path';
-import { fileURLToPath } from 'url';
+const {fileURLToPath} = require('url');
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
-// const {fileURLToPath} = require('url');
 // // import { fileURLToPath } from "url";
 // const path = require('path')
 // // import { dirname } from "path";
