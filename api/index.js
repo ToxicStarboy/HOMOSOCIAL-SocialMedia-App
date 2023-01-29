@@ -9,7 +9,7 @@ const postRoute = require("./routes/posts");
 const authRoute = require("./routes/auth");
 const cors = require("cors");
 const multer = require("multer");
-const path = require("path");
+// const path = require("path");
 
 dotenv.config();
 
